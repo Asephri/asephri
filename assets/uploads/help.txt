@@ -1,0 +1,12 @@
+-------------------- HELP MENU --------------------
+
+Available Commands:
+--------------------
+- clear : Clears the console screen.
+- load <filename>: 
+	Displays all hmtl files uploaded.
+	Usage: load myfile.txt
+
+- help: Displays this help message.
+
+---------------------------------------------------

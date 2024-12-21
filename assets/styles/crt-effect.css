@@ -1,0 +1,32 @@
+/* Basic styling for terminal with a contained glowing effect */
+#terminal {
+    filter: brightness(1.2) contrast(1.4);
+    background-color: #1c1c1c;  /* Increased Darker bg for contrast */
+    box-shadow: inset 0 0 20px 5px rgba(255, 127, 0, 0.5);  /* glow inside the terminal box */
+    
+    /* Apply glow effect to all text */
+    text-shadow: 0 0 10px rgba(255, 127, 0, 0.6), 0 0 20px rgba(255, 127, 0, 0.4);
+}
+
+/* Optional: Add a soft pulsing glow effect to the text */
+#terminal p, #terminal span, #terminal div, #terminal input {
+    animation: textGlow 1.5s ease-in-out infinite alternate;  /* Pulse the text glow */
+}
+
+/* Animation for glowing text */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 127, 0, 0.6), 0 0 20px rgba(255, 127, 0, 0.4);  /* Soft glow */
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 127, 0, 1), 0 0 30px rgba(255, 127, 0, 0.8);  /* Stronger glow */
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 127, 0, 0.6), 0 0 20px rgba(255, 127, 0, 0.4);  /* Back to soft glow */
+    }
+}
+
+/* Optional: Input text glow effect */
+#terminal input {
+    background-color: transparent;  /* Transparent input field */
+}

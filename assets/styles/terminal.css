@@ -1,0 +1,92 @@
+/* Basic styling for terminal */
+#terminal {
+    width: 90%; /* Terminal takes up 90% of the screen width */
+    max-width: 1000px; /* Limit maximum width for large screens */
+    height: 70vh; /* Terminal height takes up 70% of the viewport height */
+    max-height: 600px; /* Limit maximum height */
+    border: 2px solid #FF8000;
+    padding: 20px;
+    background-color: black;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; /* Prevent horizontal scroll in the entire terminal */
+    margin: auto; /* Centers the terminal */
+    box-sizing: border-box;
+}
+
+/* Terminal output */
+#terminal-output {
+    font-size: 18px;
+    flex-grow: 1;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    word-wrap: break-word; /* Ensures text wraps to the next line */
+    overflow-wrap: break-word; /* Ensures long words break and wrap */
+    white-space: pre-wrap; /* Makes sure line breaks and spaces are respected */
+    margin-bottom: 10px;
+}
+
+/* Input Line */
+#input-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#user-input {
+    background: transparent;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    width: 100%; /* Full width of the terminal */
+    z-index: 2; /* Ensures the input field is above other elements */
+    white-space: nowrap; /* Prevents input text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis if the input exceeds the available width */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    #terminal {
+        width: 95%; /* Slightly smaller width on medium-large screens */
+        height: 65vh; /* Adjust height on medium-large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #terminal {
+        width: 100%; /* Full width on tablets and small desktops */
+        height: 60vh; /* Adjust height on medium screens */
+        padding: 15px; /* Reduce padding to fit smaller devices */
+    }
+    
+    #terminal-output {
+        font-size: 16px; /* Smaller font size for better readability */
+    }
+
+    #user-input {
+        font-size: 16px; /* Smaller font size for input field */
+    }
+}
+
+@media (max-width: 480px) {
+    #terminal {
+        width: 100%; /* Full width on mobile screens */
+        height: 50vh; /* Reduce terminal height for small screens */
+        padding: 10px; /* Less padding on mobile */
+    }
+
+    #terminal-output {
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+
+    #user-input {
+        font-size: 14px; /* Smaller font size for input field */
+    }
+}
