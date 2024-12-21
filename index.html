@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+	<link rel="icon" href="assets/images/aboutmepfp.png">
+    <link rel="stylesheet" href="assets/styles/standard.css">
+    <link rel="stylesheet" href="assets/styles/terminal.css">
+</head>
+<body>
+	<div id="splash">
+	Walnurr!
+	</div>
+	<div id="current_date">
+		<script>
+			date = new Date();
+			year = date.getFullYear();
+			month = date.getMonth() + 1;
+			day = date.getDate();
+			document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+		</script>
+	</div>
+	<div id="terminal">
+		<div id="terminal-output"></div>
+		Terminal Version [ 2.0.0 ]
+		<div id="input-line">
+			<span id="user-prompt">> </span>
+			<input type="text" id="user-input" autofocus />
+		</div>
+	</div>
+    <script src="assets/scripts/terminal.js"></script>
+</body>
+<footer>
+	<div class="footer">
+		<h5><small> ------------------------- &copy;Copyright 2024 Walnurr. All Rights Reserved ------------------------- </small></h5>
+	</div>
+</footer>	
+</html>
