@@ -3,7 +3,13 @@ body {
   font-size: 0.875em;
   margin: 0;
   padding: 0;
+  background-color: #667658;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll; /* This ensures the background scrolls with the page */
 }
+
 
 /* Wrapper containing everything */
 .wrapper {
@@ -83,6 +89,28 @@ body {
 .box img {
   max-width: 100%;
   height: auto;
+}
+
+/* Style  */
+.navbar {
+	overflow: hidden;
+}
+/* Style links */
+.navbar a {
+	float: left;
+	display: block;
+	color: orange;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+	float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+	color: lightskyblue;
 }
 
 /* Mobile responsiveness */
