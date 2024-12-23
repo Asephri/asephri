@@ -3,7 +3,13 @@ body {
   font-size: 0.875em;
   margin: 0;
   padding: 0;
+  background-color: #667658;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll; /* This ensures the background scrolls with the page */
 }
+
 
 /* Wrapper containing everything */
 .wrapper {
@@ -50,12 +56,6 @@ body {
   width: 100%;
 }
 
-.navbar {
-	overflow: hidden;
-	background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,0.75) 0%, rgba(160,6,6,0.25) 90% );
-	border-radius: 10px;
-}
-
 /* Main content (30% width) */
 .main {
   flex: 80%; /* Main area takes up 30% */
@@ -89,6 +89,28 @@ body {
 .box img {
   max-width: 100%;
   height: auto;
+}
+
+/* Style  */
+.navbar {
+	overflow: hidden;
+}
+/* Style links */
+.navbar a {
+	float: left;
+	display: block;
+	color: orange;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+	float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+	color: lightskyblue;
 }
 
 /* Mobile responsiveness */
