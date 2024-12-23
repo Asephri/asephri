@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #667658;
-  background-image: url(../images/background.png);
+  background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: scroll; /* This ensures the background scrolls with the page */
