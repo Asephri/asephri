@@ -50,6 +50,12 @@ body {
   width: 100%;
 }
 
+.navbar {
+	overflow: hidden;
+	background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,0.75) 0%, rgba(160,6,6,0.25) 90% );
+	border-radius: 10px;
+}
+
 /* Main content (30% width) */
 .main {
   flex: 80%; /* Main area takes up 30% */
