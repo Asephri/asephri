@@ -5,25 +5,61 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>404 - Page not found!</title>
-		<link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" >
-        <link href="../assets/css/default.css" rel="stylesheet" type="text/css" media="all">
+		<link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="assets/css/animation.css" rel="stylesheet" type="text/css" media="all">
+        <link href="assets/css/cursor.css" rel="stylesheet" type="text/css" media="all">
+        <style>
+            body {
+                background-color: black;
+                color: orange;
+                text-align: center;
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family: 'Courier New', monospace; /* Monospaced font */
+                font-size: 24px; /* Larger text size */
+            }
+            pre {
+                text-align: left;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-size: 28px; /* Larger ASCII art text size */
+            }
+            a {
+                color: orange;
+                text-decoration: none;
+                font-size: 24px; /* Larger link size */
+            }
+            a:hover {
+                color: lightskyblue; /* Change link color on hover */
+            }
+        </style>
 	</head>
     <body>
-        <h1>No such place exists!</h1>
-        <pre>
-                                    ,
-             ,-.      _,---._ __   / \
-            /  /   .-'       `./  /   \
-           (  (   ,'            `/    /|
-            \  `-"             \'\   / |
-             `.              ,  \ \ /  |
-              /`.          ,'-`----Y   |
-             (            ;        |   '
-             |  ,-.    ,-'         |  /
-             |  | (   |            | /
-             )  |  \  `.___________|/
-             `--'   `--'   
-        </pre>
-        <a href="index.html">Goto to Home?</a>
+        <div class="cursor"></div>
+        <div>  
+            <h1 id="section-1">No such place exists!</h1>
+            <div>
+                <pre>
+                           ,.
+    ,-.      _,---._ __   /  \
+   /  /   .-'       `./  /    \
+  (  |   ,'            `/     /|
+   \  `-"             \'\    / |
+    `.              ,  \ \  /  |
+    / `.          ,'-`----Y    |
+    |            ;        |   /
+    |  ,-.    ,-'Asephri  |  /
+    |  | (  |        .net | /
+    |  |  \  `.___________|/
+    '--'   `--'   
+                </pre>
+                <a href="index.html">Go to Home?</a>
+            </div>
+        </div>
+        <script src="assets/scripts/cursor.js"></script>
     </body>
 </html>
