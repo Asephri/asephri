@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed; /* Works well in Firefox */
+  font-family: 'Roboto', sans-serif;
 }
 
 .center {
