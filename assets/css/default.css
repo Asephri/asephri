@@ -7,7 +7,7 @@ body {
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-position: top center;
-  background-attachment: scroll; /* This ensures the background scrolls with the page */
+  background-attachment: fixed; /* Works well in Firefox */
 }
 
 
@@ -50,34 +50,29 @@ body {
   padding: 0;
 }
 
-/* Flex container for main content and sidebars */
 .wrapper-2 {
   display: flex;
   width: 100%;
 }
 
-/* Main content (30% width) */
 .main {
-  flex: 80%; /* Main area takes up 30% */
+  flex: 80%;
   min-height: 100vh;
 }
 
-/* Sidebars (25% each) */
 .sidebar-left, .sidebar-right {
-  flex: 20%; /* Sidebars take up 25% each */
+  flex: 20%;
 }
 
 .sidebar-left {
-  order: -1; /* Left sidebar comes first */
+  order: -1;
 }
 
 .sidebar-right {
-  order: 1; /* Right sidebar comes after the main content */
+  order: 1;
 }
 
-/* Box used for sections in the sidebar or content */
 .box {
-  
   background: #efbfc6;
   color: #c22828;
   border-top: 4px solid #8ab99c;
@@ -91,26 +86,28 @@ body {
   height: auto;
 }
 
-/* Style  */
 .navbar {
 	overflow: hidden;
 }
-/* Style links */
+
+.navbar {
+  display: flex;
+}
+
 .navbar a {
-	float: left;
-	display: block;
-	color: orange;
-	text-align: center;
-	padding: 4px;
-	text-decoration: none;
+  color: orange;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
 }
-/* Right-aligned link */
-.navbar a.right {
-	float: right;
-}
-/* Change color on hover */
+
 .navbar a:hover {
-	color: lightskyblue;
+  color: lightskyblue;
+}
+
+.navbar a.right {
+  margin-left: auto;
 }
 
 /* Mobile responsiveness */
