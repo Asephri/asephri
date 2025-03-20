@@ -3,45 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="https://asephri.net/assets/images/logo.png"/>
-        <meta property="og:description" content="Welcome to Asephri.net!"/>
-        <meta property="og:title" content="Asephri's Website"/>
-        <meta property="og:url" content="https://asephri.net"/>
-        <title>Asephri's page</title>
-        <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/animation.css">
-        <link href="assets/css/cursor.css" rel="stylesheet" type="text/css" media="all">
-    </head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Meta tags for SEO-->
+        <meta name="description" content="Welcome to Asephri's personal website! Explore projects in programming, digital art, and media creation.">
+        <meta name="keywords" content="Asephri, programming, digital art, media, web development, creative projects, coding, design, art, personal portfolio">
+        <!--Open Graph meta tags-->
+        <meta property="og:image" content="https://asephri.net/assets/images/logo.png">
+        <meta property="og:description" content="Asephri's personal site showcasing creative projects in programming, art, and media.">
+        <meta property="og:title" content="Asephri's Personal Website - Programming, Art, Media">
+        <meta property="og:url" content="https://asephri.net">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Asephri's website">
+        <!--Twitter Card meta tags-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Asephri's Personal Website - Programming, Art, Media">
+        <meta name="twitter:description" content="Explore Asephri's creative work.">
+        <meta name="twitter:image" content="https://asephri.net/assets/images/logo.png">  
+        <!--Title and canonical link-->
+        <title>Asephri's Page</title>
+        <link rel="canonical" href="https://asephri.net">  
+        <!--Favicon and resources-->
+        <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+        <link rel="preload" href="./assets/css/style.css" as="style">
+        <link rel="preload" href="./assets/css/animation.css" as="style">
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <link rel="stylesheet" href="./assets/css/animation.css"> 
+        <!--Mobile optimization-->
+        <meta name="theme-color" content="#FFA500">
+    </head>    
     <body>
-        <div class="wrapper">
-            <div class="cursor"></div>
-            <span class="title">J's place</span>
+        <div class="notice">
             <div class="frame">
                 <div class="viewport">
-                    <div class="viewport2">
-                        <div class="viewport">
-                            <h1>About me</h1>
-                            <p>I’m a hobbyist programmer since 2014; but i'm a IT dronebot 5000 working on stupid problems instead. I'm also a business student.</p>
-                            
-                        </div>
-                        <div class="pfp">
-                            <img src="assets/images/orang.png" alt="A orange cat"> 
-                        </div>
-                    </div>
-                    <h3>NOTICE</h3>
-                    <p>I'm currently rebuilding the site so all that is available as of now is my links, the programming stuff will return in the future.</p>
-                    <br></br>
-                    <div class="links">
-                        <h3>My links</h3>
-                        <a href="https://github.com/Asephri" target="_blank" class="link">Github</a>
-                        <a href="https://asephri.itch.io/" target="_blank" class="link">Itchi.io</a>
-                        <a href="https://www.youtube.com/channel/UCLIZIzwwGCfmDFw5iJviZoQ" target="_blank" class="link">Youtube</a>
-                    </div>
+                    Site rework currently underway, only my weblinks are available.
                 </div>
             </div>
-            <small>&copy;Copyright 2024-2025 Asephri.net. All Rights Reserved</small>
         </div>
-        <script src="assets/scripts/cursor.js"></script>  
+        <div class="container">
+            <div class="header"><h1>Asephri.net</h1></div>
+                <div class="image">
+                    <img src="assets/images/orang.png" alt="3D model Orange cat"></img>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://github.com/Asephri" target="_blank" class="link">Github</a></li>
+                        <li><a href="https://asephri.itch.io/" target="_blank" class="link">Itchi.io</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCLIZIzwwGCfmDFw5iJviZoQ" target="_blank" class="link">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h2>The only way to do great work is to love what you do.</h2>
+                    <h3>Welcome to Asephri.net!</h3>
+            </div>
+        </div>
+        </div><small>©Copyright 2024-2025 Asephri.net. All Rights Reserved</small>
     </body>
 </html>
