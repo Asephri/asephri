@@ -64,7 +64,8 @@ body { /*style the page*/
         }
         div.menu li {
             font-size: 72px;
-            margin-bottom; margin-top: 72px;
+            margin-bottom: 72px;
+            margin-top: 72px;
         }
         div.menu a {
             color: white;
