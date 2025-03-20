@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!--Meta tags for SEO-->
-        <meta name="description" content="Welcome to Asephri's personal website! Explore projects in programming, digital art, and media creation.">
-        <meta name="keywords" content="Asephri, programming, digital art, media, web development, creative projects, coding, design, art, personal portfolio">
+        <meta name="description" content="Asephri's Personal links. Explore their creations across the web!">
+        <meta name="keywords" content="Asephri, programming, digital art, media, web development, creative projects, coding, design, art, personal portfolio, links">
         <!--Open Graph meta tags-->
         <meta property="og:image" content="https://asephri.net/assets/images/logo.png">
         <meta property="og:description" content="Asephri's personal site showcasing creative projects in programming, art, and media.">
@@ -17,10 +17,10 @@
         <!--Twitter Card meta tags-->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Asephri's Personal Website - Programming, Art, Media">
-        <meta name="twitter:description" content="Explore Asephri's creative work.">
+        <meta name="twitter:description" content="Explore Asephri's links across the web!">
         <meta name="twitter:image" content="https://asephri.net/assets/images/logo.png">  
         <!--Title and canonical link-->
-        <title>Asephri's Page</title>
+        <title>Asephri's Links</title>
         <link rel="canonical" href="https://asephri.net">  
         <!--Favicon and resources-->
         <link rel="icon" type="image/png" href="assets/images/favicon.ico">
@@ -32,29 +32,42 @@
         <!--Mobile optimization-->
         <meta name="theme-color" content="#FFA500">
     </head>
+    <style>
+        .container { /*container styling*/
+            display: grid;
+            grid-template-areas:
+            "header"
+            "menu"
+            "footer";
+            grid-template-columns: 1fr;
+            gap: 5px;
+            /*background-color: black;*/
+            padding: 5px;
+        }
+    </style>
     <body>
-        <div class="notice">
-            <div class="frame">
-                <div class="viewport">
-                    Site rework currently underway. alot of pages are weird looking.
-                </div>
-            </div>
-        </div>
         <div class="container">
-            <div class="header"><h1>Asephri.net</h1></div>
-                <div class="image">
-                    <img src="assets/images/orang.png" alt="3D model Orange cat"></img>
-                </div>
+            <div class="header"><h1>My web presence!</h1></div>
                 <div class="menu">
+                    <h2>Professional links</h2>
                     <ul>
-                        <li><a href="gallery.html" target="_self" class="link">Gallery</a></li>
-                        <li><a href="links.html" target="_self" class="link">External Links</a></li>
-                        <li><a href="pets.html" target="_self" class="link">Pets</a></li>
+                        <li><a href="https://github.com/Asephri" target="_blank" class="link">Github</a></li>
+                        <li><a href="https://asephri.itch.io/" target="_blank" class="link">Itchi.io</a></li>
+                        
+                    </ul>
+                    <h2>Personal links</h2>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCLIZIzwwGCfmDFw5iJviZoQ" target="_blank" class="link">Youtube</a></li>
+                        <li><a href="https://bsky.app/profile/asephri.net" target="_blank" class="link">Bluesky</a></li>
+                        <li><a href="https://www.reddit.com/user/asephri/" target="_blank" class="link">Reddit</a></li>
+                        <li><a href="https://www.last.fm/user/asephri" target="_blank" class="link">last.fm</a></li>
+                        <li><a href="https://steamcommunity.com/id/asephri/" target="_blank" class="link">steam</a></li>
                     </ul>
                 </div>
                 <div class="footer">
-                    <h2>The only way to do great work is to love what you do.</h2>
-                    <h3>Welcome to Asephri.net!</h3>
+                    <h2>There is probably more out there too.</h2>
+                    <h3>site navigation:</h3>
+                    <ul><li><a href="https://Asephri.net" target="_blank" class="link">Home</a></li></ul>
                 </div>
             </div>
         </div>

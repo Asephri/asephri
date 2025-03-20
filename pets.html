@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Meta tags for SEO-->
+        <meta name="description" content="Asephri's Pets! Enjoy looking at them.">
+        <meta name="keywords" content="Asephri, programming, digital art, media, web development, creative projects, coding, design, art, personal portfolio, links">
+        <!--Open Graph meta tags-->
+        <meta property="og:image" content="https://asephri.net/assets/images/logo.png">
+        <meta property="og:description" content="Asephri's personal site showcasing creative projects in programming, art, and media.">
+        <meta property="og:title" content="Asephri's Personal Website - Programming, Art, Media">
+        <meta property="og:url" content="https://asephri.net">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Asephri's website">
+        <!--Twitter Card meta tags-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Asephri's Personal Website - Programming, Art, Media">
+        <meta name="twitter:description" content="Adorable pets.">
+        <meta name="twitter:image" content="https://asephri.net/assets/images/logo.png">  
+        <!--Title and canonical link-->
+        <title>Asephri's Pets</title>
+        <link rel="canonical" href="https://asephri.net">  
+        <!--Favicon and resources-->
+        <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+        <link rel="preload" href="./assets/css/style.css" as="style">
+        <link rel="preload" href="./assets/css/animation.css" as="style">
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <link rel="stylesheet" href="./assets/css/animation.css"> 
+        <!--Mobile optimization-->
+        <meta name="theme-color" content="#FFA500">
+    </head>
+    <style>
+        .container { /*container styling*/
+            display: grid;
+            grid-template-areas:
+            "header"
+            "image"
+            "footer";
+            grid-template-columns: 1fr;
+            gap: 5px;
+            /*background-color: black;*/
+            padding: 5px;
+        }
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+        .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        }
+        .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        }
+
+        @media (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+        @media (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header"><h1>My pets.</h1></div>
+                <div class="image">
+                    <div class="row"> 
+                        <div class="column">
+                            <img src="assets/uploads/pets/miso.jpg" style="width:100%">
+                            <img src="assets/uploads/pets/miso01.jpg" style="width:100%">
+                            <img src="assets/uploads/pets/miso02.jpg" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/uploads/pets/miso03.jpg" style="width:100%">
+                            <img src="assets/uploads/pets/miso04.jpg" style="width:100%">
+                            <img src="assets/uploads/pets/miso05.jpg" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/uploads/pets/miso06.jpg" style="width:100%">
+                        </div>
+                </div>
+                <div class="footer">
+                    <h2>cats and fish.</h2>
+                    <h3>site navigation:</h3>
+                    <li><a href="https://Asephri.net" target="_self" class="link">Home</a></li>
+                </div>
+            </div>
+        </div>
+        <small>©Copyright 2024-2025 Asephri.net. All Rights Reserved</small>
+    </body>
+</html>

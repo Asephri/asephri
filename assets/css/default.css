@@ -55,7 +55,7 @@ body { /*style the page*/
 
     .container > div.image {
         grid-area: image;
-        text-align: right
+        text-align: right;
     }
         div.image img {
             width: 40%;
@@ -77,11 +77,14 @@ body { /*style the page*/
         }
         div.menu a:hover {
             color: black;
-    }
+        }
     .container > div.footer {
         grid-area: footer;
         text-align: center;
     }
+        div.footer ul {
+            list-style-type: none;
+        }
 
 
 @media (max-width: 800px) { /*mobile-specific styles*/
