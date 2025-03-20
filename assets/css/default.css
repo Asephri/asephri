@@ -5,12 +5,16 @@ body { /*style the page*/
     display: grid;
     justify-content: center;
     align-items: center;
+    transform: scale(0.9);
+    width: 100vw;
     height: 100vh;
+    overflow: hidden;  /* Prevents any content from overflowing if necessary */
     margin: 0;
 }
 
 .notice { /*notice styling*/
         position: absolute;
+        top: 0;
         color: white;
     }
         .frame { /*content container frame*/
@@ -81,10 +85,13 @@ body { /*style the page*/
 
 
 @media (max-width: 800px) { /*mobile-specific styles*/
+    body {
+        transform: scale(1);
+    }
+
     .notice { 
         position: relative;
     }
-
     .container {
         grid-template-areas:
           "header"
@@ -114,6 +121,10 @@ body { /*style the page*/
         }
 }
 @media (max-height: 800px) and (orientation: landscape) {
+    body {
+        transform: scale(1);
+    }
+
     .notice { 
         position: relative;
     }
