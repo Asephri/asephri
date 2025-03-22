@@ -1,130 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-html, body {
-    height: 100%;
-    margin: 0;
+html{
+	height: 100%;
+	margin: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    color: black;
-    line-height: 1;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    }
-        
-
-    .title, h1, .footer {
-        text-align: center;
-        }
-        h2, h3{
-            text-align: left;
-        }
-            h1 {
-                font-size: 2em; /* 32px */
-                color: orange;
-            }
-            h2 {
-                font-size: 1.5em; /* 24px */
-                color: purple;
-            }
-            h3 {
-                font-size: 1.17em; /* 20px */
-            }
-            strong {
-                color: green;
-            }
-            em {
-                color: red;
-            }
-        .links ul {
-            list-style-type: none;
-        }
-            .links li {
-                margin-bottom: 0.5em;
-            }
-                .links a {
-                    text-decoration: none;
-                    color: blue;
-                    transition: color 0.2s ease;
-                }
-                    .links a:hover {
-                        color: purple;
-                    }
-            
-    .wrapper {
-        width: 800px;
-        justify-content: center;
-        }
-        .container {
-            display: grid;
-            grid-template-areas:
-            "menu content"
-            "footer footer";
-            grid-template-columns: 1fr 3fr;
-            gap: 1em;
-            padding: 0.5em;
-            }
-            .container > div {
-            }
-            .container > div.menu {
-                grid-area: menu;
-            }
-            .container > div.content {
-                grid-area: content;
-                
-            }
-            .container > div.footer {
-                grid-area: footer;
-                margin-top: 0%;
-            }
-                .box {
-                    background-color: white;
-                    border: 1px solid black;
-                    padding: 0.5em 1em;
-                    margin-top: 1em;
-                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-                    border-radius: 0;
-                }
-                    .box img, .menu img {/* Prevents image overflow */
-                        display: block;
-                        max-width: 100%;
-                        height: auto;
-                        }
-
-    @media(max-width:915px) {
-        body {
-            height: auto;
-        }
-        .wrapper {    
-            width: 95%;
-            }
+	color: black;
+	line-height: 1;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	}
+    
+    iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
     }
     @media (orientation: portrait), (max-width: 480px) {
-        body {
-            height: auto;
-            margin: 0;
-            }
-            .wrapper {
-                width: 100%;
-            }
-            .container {
-                grid-template-areas:
-                "menu"
-                "content"
-                "footer";
-                grid-template-columns: 1fr;
-            }
-                .main, .sidebar, .footer {
-                margin: 0 auto;
-                width: 90%;
-                }
-                .menu img {
-                    margin: 0 auto;
-                    width: 33%;
-                    margin-top:25px;
-                    }
+        .wrapper {
+            width: 90%;
+        }
+        iframe {
+        height: 625px;
+        }
     }
+
+	.title, h1, .footer {
+		text-align: center;
+		}
+		h2, h3{
+			text-align: left;
+		}
+			h1 {
+				font-size: 2em; /* 32px */
+				color: orange;
+			}
+			h2 {
+				font-size: 1.5em; /* 24px */
+				color: purple;
+			}
+			h3 {
+				font-size: 1.17em; /* 20px */
+			}
+			strong {
+				color: green;
+			}
+			em {
+				color: red;
+			}
+            a {
+                text-decoration: none;
+                color: blue;
+                transition: color 0.3s;
+            }
+                a:hover {
+                    color: powderblue
+                }
+		.links ul {
+			list-style-type: none;
+            margin: 0;
+            padding: 0;
+		}
+			.links li {
+				margin-bottom: 0.5em;     
+                display: inline-flex;
+                align-items: center;
+			}
+				.links a {
+					color: white;
+				}
+					.links a:hover {
+						color: turquoise;
+					}
+
+	.wrapper {
+		width: 800px;
+		justify-content: center;
+		}
+		.container {
+			display: grid;
+			grid-template-areas:
+			"menu content"
+			"footer footer";
+			grid-template-columns: 1fr 3fr;
+			gap: 1em;
+			padding: 0.5em;
+			}
+			.container > div {
+			}
+			.container > div.menu {
+				grid-area: menu;
+			}
+			.container > div.content {
+				grid-area: content;
+				
+			}
+			.container > div.footer {
+				grid-area: footer;
+				margin-top: 0%;
+			}
+			
+		.box {
+			background-color: white;
+			border: 1px solid black;
+			padding: 0.5em 1em;
+			margin-top: 1em;
+			box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+			border-radius: 0;
+		}
+			.box img, .menu img {/* Prevents image overflow */
+				display: block;
+				max-width: 100%;
+				height: auto;
+				}
+		.button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			width: 10em;
+			padding: 0.5em 1em;
+			margin-bottom: 8px;
+			font-weight: bold;
+			background-color: orange;
+			border-radius: 25px;
+		}
+			.button:hover {
+				background-color: orangered; 
+				transform: scale(1.05);
+			}
+            .button img {
+                width: 32px;
+                margin-right: 8px;
+            }
+
+@media(max-width:915px) {
+	body {
+		height: auto;
+	}
+	.wrapper {    
+		width: 95%;
+		}
+}
+@media (orientation: portrait), (max-width: 480px) {
+	body {
+		height: auto;
+		margin: 0;
+		}
+		.wrapper {
+			width: 100%;
+		}
+		.container {
+			grid-template-areas:
+			"menu"
+			"content"
+			"footer";
+			grid-template-columns: 1fr;
+		}
+			.main, .sidebar, .footer {
+			margin: 0 auto;
+			width: 90%;
+			}
+			.menu img {
+				margin: auto;
+				width: 33%;
+				}
+                .button img {
+                    display: none;
+                }
+}
