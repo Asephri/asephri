@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+/*This needs a big restyling at some point.*/
 html{
 	height: 100%;
 	margin: 0;
@@ -37,15 +37,15 @@ body {
 			text-align: left;
 		}
 			h1 {
-				font-size: 2em; /* 32px */
+				font-size: 2em; /*32px*/
 				color: orange;
 			}
 			h2 {
-				font-size: 1.5em; /* 24px */
+				font-size: 1.5em; /*24px*/
 				color: purple;
 			}
 			h3 {
-				font-size: 1.17em; /* 20px */
+				font-size: 1.17em; /*20px*/
 			}
 			strong {
 				color: green;
@@ -131,7 +131,7 @@ body {
 			border: 1px solid white;
 		}
 			.button:hover {
-				background-color: orangered; 
+				background-color: orangered;
 				transform: scale(1.05);
 			}
             .button img {
