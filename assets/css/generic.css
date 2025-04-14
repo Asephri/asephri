@@ -9,8 +9,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	color: black;
+	background-color: white;
+	color: cyan;
 	line-height: 1;
 	font-size: 16px;
 	font-family: 'Quicksand', sans-serif;
@@ -106,8 +106,8 @@ body {
 			}
 			
 		.box {
-			background-color: white;
-			border: 1px solid black;
+			background-color: black;
+			border: 1px solid white;
 			padding: 0.5em 1em;
 			margin-top: 1em;
 			box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
@@ -126,8 +126,9 @@ body {
 			padding: 0.5em 1em;
 			margin-bottom: 8px;
 			font-weight: bold;
-			background-color: orange;
-			border-radius: 25px;
+			background-color: #252525;
+			border-color:aliceblue;
+			border: 1px solid white;
 		}
 			.button:hover {
 				background-color: orangered; 
